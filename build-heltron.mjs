@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * This script is used to build the n8n application for production.
+ * This script is used to build the heltron application for production.
  * It will:
  * 1. Clean the previous build output
  * 2. Run pnpm install and build
@@ -64,7 +64,7 @@ function printDivider() {
 }
 
 // --- Main Build Process ---
-printHeader('n8n Build & Production Preparation');
+printHeader('heltron Build & Production Preparation');
 echo(`INFO: Output Directory: ${config.compiledAppDir}`);
 printDivider();
 
@@ -153,7 +153,7 @@ startTimer('package_deploy');
 
 await fs.ensureDir(config.compiledAppDir);
 
-await $`cd ${config.rootDir} && NODE_ENV=production DOCKER_BUILD=true pnpm --filter=n8n --prod --legacy deploy --no-optional ./compiled`;
+await $`cd ${config.rootDir} && NODE_ENV=production DOCKER_BUILD=true pnpm --filter=heltron --prod --legacy deploy --no-optional ./compiled`;
 
 const packageDeployTime = getElapsedTime('package_deploy');
 
@@ -199,7 +199,7 @@ const totalBuildTime = getElapsedTime('total_build');
 // --- Final Output ---
 echo('');
 echo(chalk.green.bold('================ BUILD SUMMARY ================'));
-echo(chalk.green(`✅ n8n built successfully!`));
+echo(chalk.green(`✅ heltron built successfully!`));
 echo('');
 echo(chalk.blue('📦 Build Output:'));
 echo(`   Directory:      ${path.resolve(config.compiledAppDir)}`);
