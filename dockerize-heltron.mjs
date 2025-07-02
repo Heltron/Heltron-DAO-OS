@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
- * This script is used to build the n8n docker image locally.
+ * This script is used to build the heltron docker image locally.
  * It simulates how we build for CI and should allow for local testing.
- * By default it outputs the tag 'dev' and the image name 'n8n-local:dev'.
+ * By default it outputs the tag 'dev' and the image name 'heltron-local:dev'.
  * It can be overridden by setting the IMAGE_BASE_NAME and IMAGE_TAG environment variables.
  */
 
@@ -20,8 +20,8 @@ const rootDir = isInScriptsDir ? path.join(scriptDir, '..') : scriptDir;
 
 // --- Configuration ---
 const config = {
-	dockerfilePath: path.join(rootDir, 'docker/images/n8n/Dockerfile'),
-	imageBaseName: process.env.IMAGE_BASE_NAME || 'n8n-local',
+	dockerfilePath: path.join(rootDir, 'docker/images/heltron/Dockerfile'),
+	imageBaseName: process.env.IMAGE_BASE_NAME || 'heltron-local',
 	imageTag: process.env.IMAGE_TAG || 'dev',
 	buildContext: rootDir,
 	compiledAppDir: path.join(rootDir, 'compiled'),
@@ -30,14 +30,14 @@ const config = {
 config.fullImageName = `${config.imageBaseName}:${config.imageTag}`;
 
 // --- Check Prerequisites ---
-echo(chalk.blue.bold('===== Docker Build for n8n ====='));
+echo(chalk.blue.bold('===== Docker Build for heltron ====='));
 echo(`INFO: Image: ${config.fullImageName}`);
 echo(chalk.gray('-----------------------------------------------'));
 
 // Check if compiled directory exists
 if (!(await fs.pathExists(config.compiledAppDir))) {
 	echo(chalk.red(`Error: Compiled app directory not found at ${config.compiledAppDir}`));
-	echo(chalk.yellow('Please run build-n8n.mjs first!'));
+	echo(chalk.yellow('Please run build-heltron.mjs first!'));
 	process.exit(1);
 }
 
