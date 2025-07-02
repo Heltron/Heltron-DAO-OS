@@ -3,7 +3,7 @@
 # 🚀 Heltron
 ### *Your decentralized gateway to crypto automation*
 
-[![Launch App](https://img.shields.io/badge/🚀_Launch_App-FF3C3C?style=for-the-badge&logo=rocket&logoColor=white)](https://heltron.fun)
+[![Launch App](https://img.shields.io/badge/🚀_Launch_App-FF3C3C?style=for-the-badge&logo=rocket&logoColor=white)](https://heltron.io)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/Heltron)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Heltron)
 [![Docs](https://img.shields.io/badge/📚_Docs-4285F4?style=for-the-badge&logo=gitbook&logoColor=white)](https://heltron.gitbook.io/heltron-docs)
@@ -260,7 +260,7 @@ npx heltron-cli rewards balance
 
 <div align="center">
 
-[![Website](https://img.shields.io/badge/🌐_Website-FF3C3C?style=for-the-badge&logo=safari&logoColor=white)](https://heltron.fun)
+[![Website](https://img.shields.io/badge/🌐_Website-FF3C3C?style=for-the-badge&logo=safari&logoColor=white)](https://heltron.io)
 [![Twitter](https://img.shields.io/badge/🐦_Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/Heltron)
 [![Discord](https://img.shields.io/badge/💬_Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/heltron)
 [![GitBook](https://img.shields.io/badge/📚_Documentation-4285F4?style=for-the-badge&logo=gitbook&logoColor=white)](https://heltron.gitbook.io)
@@ -322,7 +322,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=20&duration=2000&pause=500&color=FF3C3C&center=true&width=500&lines=Start+Building+Today!;Join+the+Revolution!;Automate+Everything!" alt="Call to Action" />
 
-[![Get Started](https://img.shields.io/badge/🚀_Get_Started_Now-FF3C3C?style=for-the-badge&logo=rocket&logoColor=white&animation=pulse)](https://heltron.fun)
+[![Get Started](https://img.shields.io/badge/🚀_Get_Started_Now-FF3C3C?style=for-the-badge&logo=rocket&logoColor=white&animation=pulse)](https://heltron.io)
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="600">
 
