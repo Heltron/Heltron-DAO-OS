@@ -15,7 +15,7 @@ Portions of this software are licensed as follows:
 
 ## Sustainable Use License
 
-Version 1.0
+Version 1.01
 
 ### Acceptance
 
