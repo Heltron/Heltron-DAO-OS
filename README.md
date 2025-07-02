@@ -3,8 +3,6 @@
 # 🚀 Heltron
 ### *Your decentralized gateway to crypto automation*
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=24&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&height=60&lines=🤖+Build+Smart+Crypto+Bots;⚡+Automate+Your+Web3+Strategy;🌐+Decentralized+Bot+Network;💎+Let+Blockchain+Work+for+You" alt="Heltron Animation" />
-
 [![Launch App](https://img.shields.io/badge/🚀_Launch_App-FF3C3C?style=for-the-badge&logo=rocket&logoColor=white)](https://heltron.fun)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/Heltron)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Heltron)
