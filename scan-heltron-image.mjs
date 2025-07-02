@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * This script is used to scan the n8n docker image for vulnerabilities.
+ * This script is used to scan the heltron docker image for vulnerabilities.
  * It uses Trivy to scan the image.
  */
 
@@ -16,7 +16,7 @@ const rootDir = isInScriptsDir ? path.join(scriptDir, '..') : scriptDir;
 
 // --- Configuration ---
 const config = {
-	imageBaseName: process.env.IMAGE_BASE_NAME || 'n8n-local',
+	imageBaseName: process.env.IMAGE_BASE_NAME || 'heltron-local',
 	imageTag: process.env.IMAGE_TAG || 'dev',
 	trivyImage: process.env.TRIVY_IMAGE || 'aquasec/trivy:latest',
 	severity: process.env.TRIVY_SEVERITY || 'CRITICAL,HIGH,MEDIUM,LOW',
@@ -58,7 +58,7 @@ const printSummary = (status, time, message) => {
 
 // --- Main Process ---
 (async () => {
-	printHeader('Trivy Security Scan for n8n Image');
+	printHeader('Trivy Security Scan for heltron Image');
 
 	try {
 		await $`command -v docker`;
@@ -71,7 +71,7 @@ const printSummary = (status, time, message) => {
 		await $`docker image inspect ${config.fullImageName} > /dev/null 2>&1`;
 	} catch {
 		echo(chalk.red(`Error: Docker image '${config.fullImageName}' not found`));
-		echo(chalk.yellow('Please run dockerize-n8n.mjs first!'));
+		echo(chalk.yellow('Please run dockerize-heltron.mjs first!'));
 		process.exit(1);
 	}
 
